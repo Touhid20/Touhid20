@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loging And Registration Form Design</title>
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="login-page">
+  <div class="form">
+        <form class="registrater-form">
+		<select class="form-control" name="user_type" id="user_type" data-fv-field="user_type">
+		<option selected="selected" value="">Select Type</option>
+     	<option value="Acounts" class="science">Acounts</option>
+		<option value="M & E" class="both_group">M & E</option>
+		<option value="Others" class="both_group">Others</option>
+		 </select>
+		<input type="text" placeholder="user name"/>
+		<input type="text" placeholder="password"/>
+		<input type="text" placeholder="email"/>
+		<button>Create</button>
+		<p class="message register">Alredy Register? <a href="#">Login</a>
+		</p>
+		
+        </form>
+		<form class="login-form">
+		<select class="form-control" name="user_type" id="user_type" data-fv-field="user_type">
+		<option selected="selected" value="">Select Type</option>
+		<option value="Admin" class="both_group">Admin</option>
+     	<option value="Acounts" class="science">Acounts</option>
+		<option value="M & E" class="both_group">M & E</option>
+		<option value="Others" class="both_group">Others</option>
+		 </select>
+		<input type="text" placeholder="user name"/>
+		<input type="password" placeholder="password"/>
+		<button>login</button>
+		<p class="message">Not Register? <a href="#">Registere</a>
+		</p>
+		
+        </form>
+		
+		
+   </div>
+   </div>
+   <script src='https://code.jquery.com/jquery-3.5.1.min.js'>
+   </script>
+   <script>
+   $('.message a').click(function(){
+   
+   $('.registrater-form').show(1000);
+   $('.login-form').hide(1000);
+   });
+   $('.register a').click(function(){
+   
+   $('.registrater-form').hide(1000);
+   $('.login-form').show(1000);
+   });
+   </script>
+
+
+</body>
+
+</html>
